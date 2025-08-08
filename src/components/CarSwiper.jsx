@@ -74,6 +74,27 @@ const CarPartsSwiper = () => {
     setIsAutoPlay(!isAutoPlay)
   }
 
+  // Navigation functions
+  const handleViewDetails = () => {
+    const contactSection = document.getElementById('contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
+  const handleAddToCart = () => {
+    const productsSection = document.getElementById('products')
+    if (productsSection) {
+      productsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   const slideVariants = {
     enter: (direction) => ({
       x: direction > 0 ? '100%' : '-100%',
@@ -271,6 +292,7 @@ const CarPartsSwiper = () => {
                         transition={{ delay: 0.6, duration: 0.5 }}
                       >
                         <motion.button
+                          onClick={handleAddToCart}
                           whileHover={{ scale: 1.05, y: -2 }}
                           whileTap={{ scale: 0.98 }}
                           className={`flex items-center justify-center gap-3 bg-gradient-to-r ${currentPart.color} text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 group`}
@@ -280,6 +302,7 @@ const CarPartsSwiper = () => {
                         </motion.button>
                         
                         <motion.button
+                          onClick={handleViewDetails}
                           whileHover={{ scale: 1.05, y: -2 }}
                           whileTap={{ scale: 0.98 }}
                           className="flex items-center justify-center gap-3 bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-2xl font-bold text-lg border border-white/30 hover:bg-white/30 transition-all duration-300 group"

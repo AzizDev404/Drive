@@ -87,7 +87,7 @@ const ContactSection = () => {
       value: t('contact.locationValue'),
       gradient: 'from-cyan-500 to-blue-500',
       bgGradient: 'from-cyan-50 to-blue-50',
-      link: 'https://www.google.com/maps/place/Tokyo,+Japan',
+      link: 'https://maps.app.goo.gl/3RUnQsGy1h7kWhqn8?g_st=it',
     },
   ]
 

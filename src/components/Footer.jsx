@@ -50,8 +50,8 @@ const Footer = () => {
     },
     {
       icon: MapPin,
-      text: 'Tokyo, Japan',
-      href: 'https://www.google.com/maps/place/Tokyo,+Japan',
+      text: "CVCC+7M Kaminokawa, Tochigi, Japan",
+      href: 'https://maps.app.goo.gl/3RUnQsGy1h7kWhqn8?g_st=it',
       bgColor: 'bg-purple-500/20',
       hoverColor: 'group-hover:bg-purple-500/30',
       iconColor: 'text-purple-400'
